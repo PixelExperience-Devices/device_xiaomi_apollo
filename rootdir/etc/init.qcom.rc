@@ -411,6 +411,9 @@ on post-fs-data
     mkdir /data/vendor/modemservice 0770 system system
     chown system system /data/vendor/modemservice
 
+    # NFC
+    chown nfc nfc /dev/pn54x
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
