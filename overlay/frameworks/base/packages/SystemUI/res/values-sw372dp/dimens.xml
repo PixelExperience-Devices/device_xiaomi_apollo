@@ -15,6 +15,14 @@
  * limitations under the License.
 */
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Height of the status bar header bar when on Keyguard -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
+
     <dimen name="rounded_corner_radius">4dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">10dp</dimen>
+
 </resources>
