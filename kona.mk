@@ -197,12 +197,9 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-ifneq ($(TARGET_NO_FOD),true)
+ifeq ($(TARGET_NO_FOD),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
-
-PRODUCT_PACKAGES += \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm8250
 endif
 
 PRODUCT_PACKAGES += \
