@@ -309,6 +309,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.crda.sh \
+    init.leds.sh \
     init.mdm.sh \
     init.mi.usb.sh \
     init.panel_info.sh \
