@@ -311,6 +311,7 @@ PRODUCT_PACKAGES += \
     init.crda.sh \
     init.mdm.sh \
     init.mi.usb.sh \
+    init.panel_info.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
