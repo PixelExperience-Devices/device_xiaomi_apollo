@@ -224,7 +224,6 @@ vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -969,7 +968,6 @@ vendor/firmware/MessageSent_RTP.bin
 vendor/firmware/MiClassicRemix_RTP.bin
 vendor/firmware/MiHouse_RTP.bin
 vendor/firmware/MiJazz_RTP.bin
-vendor/firmware/MiMix2_RTP.bin
 vendor/firmware/MiRemix_RTP.bin
 vendor/firmware/Mi_RTP.bin
 vendor/firmware/MIX_RTP.bin
