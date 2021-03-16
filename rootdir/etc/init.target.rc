@@ -39,6 +39,7 @@ on early-init
     write /proc/sys/kernel/sched_boost 1
 
 on init
+    write /sys/class/leds/white/max_brightness 2
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
     write /dev/stune/schedtune.colocate 0
@@ -337,11 +338,6 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     user root
     group root system
     disabled
-    oneshot
-
-service leds-sh /system/vendor/bin/sh /vendor/etc/init.leds.sh
-    class core
-    user root
     oneshot
 
 on property:vendor.dcvs.prop=1
