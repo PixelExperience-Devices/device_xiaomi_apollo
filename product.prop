@@ -8,7 +8,7 @@ persist.vendor.data.mode=concurrent
 
 # Display
 ro.sf.lcd_density=440
-ro.vendor.smart_dfps.enable=false
+ro.vendor.smart_dfps.enable=true
 
 # Enable blurs, hidden under dev option
 ro.surface_flinger.supports_background_blur=1
