@@ -213,10 +213,6 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.kona
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
