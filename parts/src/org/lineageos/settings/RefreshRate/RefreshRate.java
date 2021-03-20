@@ -18,6 +18,7 @@ package org.lineageos.settings;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.content.SharedPreferences;
 import android.os.ServiceManager;
 import android.os.IBinder;
 import android.os.RemoteException;
@@ -28,6 +29,7 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
 import androidx.preference.SwitchPreference;
+import org.lineageos.settings.RefreshRateHandler;
 
 public class RefreshRate extends PreferenceActivity {
     @Override
@@ -40,7 +42,6 @@ public class RefreshRate extends PreferenceActivity {
 
     public static class RefreshRateFragment extends PreferenceFragment {
         private static final String KEY_REFRESH_RATE = "pref_refresh_rate";
-
         private ListPreference mPrefRefreshRate;
 
         IBinder surfaceFlinger = ServiceManager.getService("SurfaceFlinger");
@@ -69,7 +70,8 @@ public class RefreshRate extends PreferenceActivity {
                     final String key = preference.getKey();
 
                     if (KEY_REFRESH_RATE.equals(key)) {
-                        setFPS((int) Integer.parseInt((String) value));
+                        RefreshRateHandler.setFPS((int) Integer.parseInt((String) value));
+			RefreshRateHandler.setRefreshRate(getActivity(), Integer.parseInt((String) value));
                     }
 
                     updateValuesAndSummaries();
@@ -77,17 +79,5 @@ public class RefreshRate extends PreferenceActivity {
                 }
             };
 
-        public final void setFPS(int v) {
-            Parcel var10000 = Parcel.obtain();
-            Parcel data = var10000;
-            data.writeInterfaceToken("android.ui.ISurfaceComposer");
-            data.writeInt(v);
-            try {
-                surfaceFlinger.transact(1035, data, (Parcel)null, 0);
-            } catch (RemoteException e) {
-                // nothing we can do
-            }
-            data.recycle();
-        }
     }
 }
