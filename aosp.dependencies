@@ -12,6 +12,12 @@
    "branch"      : "eleven"
  },
  {
+   "repository"  : "device_xiaomi_apollo-sepolicy",
+   "target_path" : "device/xiaomi/apollo-sepolicy",
+   "remote"      : "pixel-devices",
+   "branch"      : "eleven"
+ },
+ {
    "repository"  : "vendor_xiaomi_apollo",
    "target_path" : "vendor/xiaomi/apollo",
    "remote"      : "pixel-devices-blobs",
