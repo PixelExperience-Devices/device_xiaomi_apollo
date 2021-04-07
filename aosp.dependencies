@@ -1,2 +1,26 @@
 [
+ {
+   "repository"  : "kernel_xiaomi_apollo",
+   "target_path" : "kernel/xiaomi/apollo",
+   "remote"      : "pixel-devices",
+   "branch"      : "eleven"
+ },
+ {
+   "repository"  : "device_xiaomi_apollo-kernel",
+   "target_path" : "device/xiaomi/apollo-kernel",
+   "remote"      : "pixel-devices",
+   "branch"      : "eleven"
+ },
+ {
+   "repository"  : "vendor_xiaomi_apollo",
+   "target_path" : "vendor/xiaomi/apollo",
+   "remote"      : "pixel-devices-blobs",
+   "branch"      : "eleven"
+ },
+ {
+   "repository"  : "LineageOS/android_hardware_xiaomi",
+   "target_path" : "hardware/xiaomi",
+   "remote"      : "github",
+   "branch"      : "lineage-18.1"
+ }
 ]
