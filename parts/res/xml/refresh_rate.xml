@@ -17,7 +17,7 @@
 
     <ListPreference
         android:key="pref_refresh_rate"
-        android:title="@string/device_refresh_rate"
+        android:title="@string/device_min_refresh_rate"
         android:entries="@array/device_refresh_rates"
         android:entryValues="@array/device_refresh_rates_val"/>
 </PreferenceScreen>
