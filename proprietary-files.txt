@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from apollo-user 11 RKQ1.200826.002 V12.1.1.0.RJDMIXM
+# All unpinned blobs below are extracted from apollo-user 11 RKQ1.200826.002 V12.1.2.0.RJDMIXM
 
 # ADSP
 vendor/bin/adsprpcd
