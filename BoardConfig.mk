@@ -86,6 +86,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_apollo
 # Kernel
 include device/xiaomi/apollo-kernel/BoardConfigKernel.mk
 
+# Light
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
