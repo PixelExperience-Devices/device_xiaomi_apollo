@@ -225,6 +225,11 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.kona \
+    android.hardware.lights-service.qti
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
