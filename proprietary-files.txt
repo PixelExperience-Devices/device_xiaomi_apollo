@@ -64,8 +64,6 @@ vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib64/libadsprpc.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib64/libaudioconfigstore.so
 
 # Audio-Hardware
 vendor/lib/vndk/libxlog.so
@@ -1255,11 +1253,18 @@ vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib64/libwvkeybox.so
 
 # Sensors
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/etc/sensors/hals.conf
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
@@ -1267,37 +1272,27 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libultrasound.so
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/etc/elliptic_sensor.xml
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libssc.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib64/libssccalapi.so
+vendor/lib64/libultrasound.so
 vendor/lib64/sensors.elliptic.so
+vendor/lib64/sensors.mius.proximity.so
+vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors configs
+vendor/etc/sensors/sns_reg_config
 vendor/etc/sensors/config/sm8250_adux1050_1.json
 vendor/etc/sensors/config/sns_diag_filter.json
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/judge_calibrated_global.json
-vendor/lib/libssc.so
-vendor/lib/libssccalapi.so
-vendor/lib/libssc_default_listener.so
-vendor/lib/sensors.mius.proximity.so
-vendor/lib/sensors.ssc.so
-vendor/lib/sensors.touch.so
-vendor/lib64/libssccalapi.so
-vendor/lib64/sensors.mius.proximity.so
+vendor/etc/sensors/sensor_diag.cfg
 vendor/etc/sensors/config/adux1050_0.json
-vendor/etc/sensors/proto/sns_heart_rate.proto
 vendor/etc/sensors/config/adux1050_1.json
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/bmi26x_0.json
@@ -1327,7 +1322,6 @@ vendor/etc/sensors/config/sns_dpc.json
 vendor/etc/sensors/config/sns_fmv.json
 vendor/etc/sensors/config/sns_geomag_rv.json
 vendor/etc/sensors/config/sns_gyro_cal.json
-vendor/etc/sensors/proto/sns_hinge_angle.proto
 vendor/etc/sensors/config/sns_mag_cal.json
 vendor/etc/sensors/config/sns_nonui.json
 vendor/etc/sensors/config/sns_pedometer.json
@@ -1384,6 +1378,8 @@ vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto
 vendor/etc/sensors/proto/sns_hall.proto
 vendor/etc/sensors/proto/sns_har.proto
 vendor/etc/sensors/proto/sns_heart_beat.proto
+vendor/etc/sensors/proto/sns_heart_rate.proto
+vendor/etc/sensors/proto/sns_hinge_angle.proto
 vendor/etc/sensors/proto/sns_humidity.proto
 vendor/etc/sensors/proto/sns_interrupt.proto
 vendor/etc/sensors/proto/sns_mag.proto
@@ -1432,6 +1428,7 @@ vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_diag.cfg
 vendor/etc/sensors/sns_reg_config
+vendor/etc/elliptic_sensor.xml
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
