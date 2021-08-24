@@ -6,8 +6,8 @@
    "branch"      : "eleven"
  },
  {
-   "repository"  : "vendor_xiaomi_apollon",
-   "target_path" : "vendor/xiaomi/apollon",
+   "repository"  : "vendor_xiaomi_apollo",
+   "target_path" : "vendor/xiaomi/apollo",
    "remote"      : "pixel-devices-blobs",
    "branch"      : "eleven"
  }

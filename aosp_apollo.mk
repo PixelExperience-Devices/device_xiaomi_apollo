@@ -13,11 +13,11 @@ TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit from apollon device
-$(call inherit-product, device/xiaomi/apollon/device.mk)
+# Inherit from apollo device
+$(call inherit-product, device/xiaomi/apollo/device.mk)
 
-PRODUCT_NAME := aosp_apollon
-PRODUCT_DEVICE := apollon
+PRODUCT_NAME := aosp_apollo
+PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Mi 10T

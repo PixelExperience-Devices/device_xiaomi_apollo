@@ -52,7 +52,7 @@ fi
 
 set -e
 
-export DEVICE=apollon
+export DEVICE=apollo
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 

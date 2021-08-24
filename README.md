@@ -1,4 +1,4 @@
-#  Device Tree for Xiaomi Mi 10T/Mi 10T Pro (apollon)
+#  Device Tree for Xiaomi Mi 10T/Mi 10T Pro (apollo)
 
 ## Spec Sheet
 
@@ -22,5 +22,3 @@
 ## Device Picture
 
 ![Xiaomi Mi 10T/Mi 10T Pro](https://www.bug.hr/img/xiaomi-mi-10t-serija-telefona-za-kreativce_oFqltN.png "Xiaomi Mi 10T/Mi 10T Pro/Redmi K30S Ultra")
-
-
