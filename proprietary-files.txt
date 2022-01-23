@@ -52,8 +52,10 @@ vendor/firmware/spk1_voice_delta.txt
 vendor/firmware/spk2_playback_delta.txt
 vendor/firmware/spk2_voice_delta.txt
 
+# Audio-Hardware (Pinned from MIUI CN Beta V13.0.0.1.6 DEV)
+vendor/lib/hw/audio.primary.kona.so|6ed8adcbf700f8b66681f782f1b620a675c58877
+
 # Audio-Hardware
-vendor/lib/hw/audio.primary.kona.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libaudio_log_utils.so
