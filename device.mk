@@ -26,6 +26,10 @@ TARGET_SCREEN_WIDTH := 1080
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Shims
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
