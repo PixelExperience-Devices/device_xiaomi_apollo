@@ -9,5 +9,11 @@
     "target_path": "vendor/xiaomi/apollo",
     "remote": "pixel-devices-blobs",
     "branch": "twelve"
+  },
+  {
+    "repository": "vendor_xiaomi-firmware",
+    "target_path": "vendor/xiaomi-firmware",
+    "branch": "twelve",
+    "remote": "pixel-devices-blobs"
   }
 ]
