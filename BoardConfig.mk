@@ -20,6 +20,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_apollo
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/apollo
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := apollo,apollopro
