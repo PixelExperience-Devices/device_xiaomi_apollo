@@ -73,6 +73,7 @@ vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/lib/libacdbloader.so
 
 # Camera
 vendor/lib64/camera/com.qti.actuator.apollo_dw9800.so
